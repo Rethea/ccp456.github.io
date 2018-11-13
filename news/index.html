@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>一键新闻生成器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        html{
+            height: 100%;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Microsoft YaHei';
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            margin-left:10%; 
+            height: 100%;
+            width: 80%;
+        }
+        .Key,{
+            font-size: 1em;
+        }
+        .left{
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+        #lj{
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            resize: none;
+        }
+        #sub,#copy{
+            width: 100%;
+            height: 100%;
+            font-size: 2em;
+        }
+        .right{
+            float:left;
+            width: 50%;
+            height: 100%;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div style="padding-top:5%; font-size: 1.5em">
+        输入关键字：<input class="Key" type="text" id="mt" style="font-size:1em">
+    </div>
+    <div style="margin:50px 0 0 0; height: 40%">
+        <div class="left">
+            <textarea id="lj">甲方说要大气</textarea>
+        </div>
+        <div class="right">
+            <button id="sub">生成新闻</button>
+        </div>
+    </div>
+    <div style="height:20%">
+        <button id="copy">复制</button>
+    </div>
+</body>
+</html> 
+
+<script>
+    sub.onclick = function makelaji(){
+        var key = document.getElementById('mt').value;  
+        if(key==''){
+            window.alert("你给我输入啊");
+            document.getElementById('lj').value = "";
+        }else{
+            document.getElementById('lj').value= key + "是什么意思？" + key +"是什么梗？"+ key +"是谁？"+"这个梗又从何而来？"+ "为什么一瞬间就有很多人使用这个梗？" + "为什么大家都在"+key+"？"+ "相信不少同学都很想了解这个梗，下面就让小编为大家介绍一下"+ key +"的详细内容。"+ key +"是什么意思？"+ key +"是什么梗？"+ key +"是谁？这个梗又是从何而来？为什么一瞬间就有好多人使用这个梗？为什么大家都在"+ key +"？相信不少同学都很想了解这个梗，下面就让小编来为大家介绍一下"+ key +"梗的详细内容。"+ key +"是什么意思？"+ key +"是什么梗？"+ key +"是谁？这个梗又是从何而来？为什么一瞬间就有好多人使用这个梗？为什么大家都在"+ key +"？相信不少同学都很想了解这个梗，下面就让小编来为大家介绍一下"+ key +"梗的详细内容。"+ key +"是什么意思？"+ key +"是什么梗？"+ key +"是谁？这个梗又是从何而来？为什么一瞬间就有好多人使用这个梗？为什么大家都在"+ key +"？相信不少同学都很想了解这个梗，下面就让小编来为大家介绍一下"+ key +"梗的详细内容。" + '\n'+'\n' + "以上就是"+ key +"的全部内容，希望能够帮助到大家。";
+        }
+        console.log(key);
+    }
+
+    copy.onclick = function coPy(){
+        var content = document.getElementById('lj');
+        content.select();
+        document.execCommand("copy");
+    }
+
+</script>

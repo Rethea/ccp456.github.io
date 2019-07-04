@@ -5,120 +5,18 @@
     <title>只是想和自己聊聊天</title>
     <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="fav" href="/public/fav.ico" />
-    <style>
-        body{
-            width: 83.333%;
-            margin: auto;
-        }
-        *{
-            padding: 0;
-            margin: 0;
-            font-family: "PingFang SC","Microsoft YaHei",Lato,sans-serif;
-        }
-        .header a{
-            color: #777;
-            font-size: 0.9em;
-        }
-        a{
-            text-decoration: none;
-        }
-        a:hover{
-            color: #fe2c55
-        }
-        .card {
-            float: left;
-            margin-top: 1.5em;
-            border-radius: 15px;
-            background-image: -moz-linear-gradient( 90deg, rgb(26,209,231) 0%, rgb(171,26,188) 100%);
-            background-image: -webkit-linear-gradient( 90deg, rgb(26,209,231) 0%, rgb(171,26,188) 100%);
-            background-image: -ms-linear-gradient( 90deg, rgb(26,209,231) 0%, rgb(171,26,188) 100%);
-            box-shadow: 0px 6px 57px 0px rgba(0, 0, 0, 0.6);
-            width: 100%;
-            max-width: 700px;
-            height: 400px;
-            z-index: 1
-        }
-        .logo {
-            border-radius: 15px;
-            background-color: rgb(255, 255, 255);
-            width: 100px;
-            height: 100px;
-            z-index: 2;
-            position: relative;
-            top: 150px;
-            left: 50%;
-            margin-left: -50px;
-        }
-        .logo12 {
-            margin-left: -12px;
-            height: 100%;
-            display: block;
-            font-size: 70px;
-            font-weight: bold;
-            line-height: 1.4;
-            letter-spacing: -6px;
-            text-align: center;
-            background-image: -webkit-linear-gradient(90deg, rgb(26,209,231) 0%, rgb(171,26,188) 100%);
-            color: transparent;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            background-size: 100% 200%;
-            animation: logo12-animation 4s infinite linear;
-        }
-        @keyframes logo12-animation {
-            0% {
-                background-position: 0 0;
-            }
-            50% {
-                background-position: 0 100%;
-            }
-            100% {
-                background-position: 0 0;
-            }
-        }
-        .card-in{
-            width: 75%;
-            max-width: 700px;
-            height: 350px;
-            padding: 20px 20px 20px 20px;
-            position: absolute; 
-        }
-        .card-in .sub{
-            color: #cce;
-            font-size: 1.1em;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-        .card-in .tit{
-            color: #fff;
-            font-size: 1.5em;
-            letter-spacing: 1px;
-            width: 90%;
-        }
-        .card-in .add{
-            margin-top: 15em;
-            color: #fff;
-        }
-    </style>
+    <link rel="fav" href="./public/fav.ico" />
+    <link rel="stylesheet" href="./public/index.css" />
+    <script src="./assets/echarts.min.js"></script>
 </head>
 
-<body>
-
-    <div class="header" style="margin-top: 1em;">
+<body id="gyroContain">
+    <div class="header">
         <a href="http://github.com/ccp456" style="margin-right:1em"><i class="fa fa-github"></i>github.com/ccp456</a>
         <a><i class="fa fa-envelope-o"></i>atmccp@163.com</a>
     </div>
-    <h1 style="margin: 0; font-size: 1.5em">少上点网，多点运动；好好学习，天天向上。</h1>
-    <div class="card">
-        <div class="card-in">
-            <p class="sub">尿酸过高</p>
-            <p class="tit">该戒酒了</p>
-            <p class="add">统一、明晰、深度以及留白</p>
-        </div>
-        <div class="logo"><div class="logo12">12</div></div>
-    </div>
-
+    <div id="weight" class="weight"></div>
+    <script src="./public/weightChart.js"></script>
 </body>
+
 </html>

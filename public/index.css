@@ -1,0 +1,58 @@
+body{
+    width: 83.333%;
+    margin: auto;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "PingFang SC","Microsoft YaHei",Lato,sans-serif;
+}
+.header a{
+    color: #777;
+    font-size: 0.9em;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #fe2c55
+}
+
+.weight{
+    margin-top:10px;
+    width: 90%;
+    max-width: 800px;
+    height: 90%;
+    max-height: 600px;
+}
+
+@media screen and (orientation: portrait) {
+    html{
+        width : 100vmin;
+        height : 100vmax;
+    }
+    body{
+        width : 100vmin;
+        height : 100vmax;
+    }
+    #gyroContain{
+        width : 100vmax;
+        height : 100vmin;
+        transform-origin: top left;
+        transform: rotate(90deg) translate(0,-100vmin);
+    }
+  }
+@media screen and (orientation: landscape) {
+    html{
+        width : 100vmax;
+        height : 100vmin;
+    }
+    body{
+        width : 100vmax;
+        height : 100vmin;
+    }
+    #gyroContain{
+        width : 100vmax;
+        height : 100vmin;
+    }
+}

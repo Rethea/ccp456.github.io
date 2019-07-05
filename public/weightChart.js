@@ -1,10 +1,10 @@
-let weight = []
+var weight = []
 // weight.push()
 weight.push(181.1, 180.2, 178.4)
 weight.push(176.4, 177.8)
 weight.push(176.4)
 function up(num) {
-    this.weight.push(num * 2)
+    weight.push(num * 2)
 }
 // up()
 up(88.6)

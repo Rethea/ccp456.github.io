@@ -5,7 +5,7 @@ weight.push(176.4, 177.8)
 weight.push(176.4)
 weight.push(176.4)
 function up(num) {
-    weight.push(num * 2)
+    this.weight.push(num * 2)
 }
 // up()
 up(88.6)

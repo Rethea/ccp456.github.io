@@ -3,7 +3,6 @@ let weight = []
 weight.push(181.1, 180.2, 178.4)
 weight.push(176.4, 177.8)
 weight.push(176.4)
-weight.push(176.4)
 function up(num) {
     this.weight.push(num * 2)
 }
